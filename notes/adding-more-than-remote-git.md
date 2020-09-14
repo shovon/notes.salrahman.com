@@ -1,7 +1,7 @@
 ---
 title: Pushing to more than one remote in a single git push command
 tags:
-  - git
+  - Git
 ---
 
 If `$REMOTE_URL` is the location to which you want to push to (replace `$REMOTE_URL` with an actual URL), then, for an existing remote—as indicated by `$REMOTE_NAME`—you would invoke the following command:

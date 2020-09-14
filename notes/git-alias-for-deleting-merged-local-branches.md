@@ -1,7 +1,7 @@
 ---
 title: A Git alias for deleting locally merged branches
 tags:
-  - git
+  - Git
 ---
 
 Create a file, and call it anything. Its content should look like this:
