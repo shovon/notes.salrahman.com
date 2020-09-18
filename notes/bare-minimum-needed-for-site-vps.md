@@ -199,3 +199,9 @@ The above tutorial is rather lacking, for several reasons. Here are a few that I
 - lack of CI/CD
 
 Nevertheless, it's a good start.
+
+### Some readings
+
+- [How to use systemd to have your apps running in the background forever](https://notes.salrahman.com/have-your-app-run-in-background-forever-systemd/)
+- [Beginner's guide to NGINX](http://nginx.org/en/docs/beginners_guide.html)
+- [VIM Adventures](https://vim-adventures.com/) This is a game to teach you to use VIM. VIM is a command-line text editor, like nano, but is highly powerful, and I recommend using this instead of nano
