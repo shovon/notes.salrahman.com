@@ -186,7 +186,7 @@ certbot --nginx -d foobar.xyz
 
 And your site should be ready.
 
-The aboev tutorial was adapted from [DigitalOcean's Certbot Tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
+The above tutorial was adapted from [DigitalOcean's Certbot Tutorial](https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04)
 
 ## Follow Up
 
