@@ -4,6 +4,7 @@ tags:
   - OpenSSL
   - Elliptic-Curve Cryptography
   - Cryptographic Signatures
+  - ECDSA
 ---
 
 In one of my other notes, I went over [how to generate a set of elliptic-curve keypair using OpenSSL](/generate-elliptic-curve-keypair-openssl/).
