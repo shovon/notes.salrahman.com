@@ -28,6 +28,8 @@ Replace `$CURVE` with any of the following:
 | ES384     | secp384r1  |
 | ES512     | secp521r1  |
 
+(The above curves to be used are outlined in section 3.1 of [RFC 7518](https://www.rfc-editor.org/rfc/rfc7518.txt).)
+
 Then, to generate the public key:
 
 ```shell
