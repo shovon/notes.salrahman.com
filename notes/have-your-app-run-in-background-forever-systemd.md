@@ -33,6 +33,12 @@ Restart=always
 
 ```
 
+Then restart the systemctl daemon.
+
+```shell
+systemctl daemon-reload
+```
+
 Then, to run your app as a service, invoke the following command.
 
 ```shell
