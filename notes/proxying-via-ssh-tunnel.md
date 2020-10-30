@@ -12,7 +12,7 @@ There is a solution, however. It's through the use of SSH tunnels.
 Here's how we would go about using SSH tunneling to forward a remote port, to the local system.
 
 ```
-ssh -N -R $LOCAL_EXPOSED_PORT:$INBOUND_HOST:$REMOTE_EXPOSED_PORT $REMOTE_HOST_AND_LOGIN
+ssh -N -L $LOCAL_EXPOSED_PORT:$INBOUND_HOST:$REMOTE_EXPOSED_PORT $REMOTE_HOST_AND_LOGIN
 ```
 
 Here are what the above variables represent:
@@ -31,8 +31,8 @@ Now, what if we wanted to perform a hop through a server (such as a [bastion ser
 Then we'd omit the `-N` flag, and instead invoke yet another tunneling command from the remote server. Assuming OpenSSH is installed in the intermediate server, then we'd run the hop like so:
 
 ```
-ssh -R 3306:localhost:3307 root@remote-endpoint \
-  "ssh -N -R 3307:localhost:3306 root@database-endpoint"
+ssh -L 3306:localhost:3307 root@remote-endpoint \
+  "ssh -N -L 3307:localhost:3306 root@database-endpoint"
 ```
 
 That is, we're not only tunneling the remote `3307` port over to the local `3306`, but we're telling our local OpenSSH client to invoke the command `ssh -N -R 3307:localhost:3306 root@database-endpoint`; that is, that aforementioned command is running on the remote server. And the whole purpose of that other command is to to tunnel the remote host's 3306 over to the local 3307.
