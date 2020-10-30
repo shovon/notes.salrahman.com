@@ -24,7 +24,7 @@ Here are what the above variables represent:
 
 In the above SSH command, the `-N` flag means that we don't want to invoke any commands, and that we just want to forward the port. Without `-N`, not only will the port be forwarded, but, the command going to execute (typically, without specifying any command, the default configured shell is going to run).
 
-## Hoping to another server
+## Hopping to another server
 
 Now, what if we wanted to perform a hop through a server (such as a [bastion server](https://en.wikipedia.org/wiki/Bastion_host))?
 
@@ -38,3 +38,5 @@ ssh -R 3306:localhost:3307 root@remote-endpoint \
 That is, we're not only tunneling the remote `3307` port over to the local `3306`, but we're telling our local OpenSSH client to invoke the command `ssh -N -R 3307:localhost:3306 root@database-endpoint`; that is, that aforementioned command is running on the remote server. And the whole purpose of that other command is to to tunnel the remote host's 3306 over to the local 3307.
 
 So effectively, we connect to the database via local 3306 -> intermediate 3307 -> remote 3306.
+
+I will leave it to you to you to figure out how you would go about hopping over even more intermediate servers.
