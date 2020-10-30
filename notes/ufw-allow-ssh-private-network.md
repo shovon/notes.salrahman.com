@@ -10,7 +10,7 @@ tags:
 
 So you created a new VPS instance, it happens to be on the same [VPC](https://en.wikipedia.org/wiki/Virtual_private_cloud) some [bastion server](https://en.wikipedia.org/wiki/Bastion_host). This is great.
 
-You may want to take full advantage of this fact, by banning all packets except for TCP/80, TCP/443, ICMP, and SSH connections from inside VPC. Ubuntu has a firewall management tool called [`ufw`](https://help.ubuntu.com/community/UFW), which serves as a abstraction over [iptables](https://en.wikipedia.org/wiki/Iptables).
+You may want to take full advantage of this fact, by banning all packets except for TCP/80, TCP/443, and SSH connections from inside VPC. Ubuntu has a firewall management tool called [`ufw`](https://help.ubuntu.com/community/UFW), which serves as a abstraction over [iptables](https://en.wikipedia.org/wiki/Iptables).
 
 In the case of DigitalOcean, all VPS instances have two [networking interfaces](https://en.wikipedia.org/wiki/Network_interface): one for the publicly facing Internet, and the other for other machines inside the VPC.
 
