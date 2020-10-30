@@ -33,7 +33,7 @@ Let's break it down.
 - `in on eth1` states that our rule is exclusively for packets that are meant for the `eth1` interface
 - `from any` states that we are allowing packets from any IP addresses (in the case of interface filtering, this rule is fine. But if we can't filter by interface, then we should ideally replace `any` with either an IP address, or an IP address range using the [CIDR subnet mask notation](https://docs.netgate.com/pfsense/en/latest/network/cidr.html))
 - `to any` states that we are allowing all packets to go to any of the IP addresses that is assigned to the VPS. We could, if we wanted to, replace `any` with a either an IP address, or an IP address range using the CIDR subnet mask notation
-- `proto tcp` means that the `allow` rule is for TCP packets. And finall…
+- `proto tcp` means that the `allow` rule is for TCP packets. And finally…
 - `port 22` indicates what port are the packets allowed to be sent to
 
 Depending on what you want to achieve with the VPS, and how the VPS was set up, you may also want to consider deleting some pre-existing rules.
