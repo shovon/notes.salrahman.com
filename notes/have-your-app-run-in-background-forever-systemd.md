@@ -31,6 +31,8 @@ ExecStart=/path/to/program
 
 Restart=always
 
+[Install]
+WantedBy=multi-user.target
 ```
 
 Then restart the systemctl daemon.
