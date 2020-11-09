@@ -1,11 +1,11 @@
 ---
-title: `useState` VS Code Snippet
+title: A "useState" VS Code Snippet
 tags:
   - VS Code
   - React
 ---
 
-Just create the following snippet, and you should be able to quickly generate a `useState` invocation.
+[Create the following snippet](somewhere), for JavaScript, TypeScript, and any other languages that look similar enough in order for the following snippet to work mostly fine.
 
 ```
 {
@@ -16,3 +16,5 @@ Just create the following snippet, and you should be able to quickly generate a 
 	},
 }
 ```
+
+The reason why I claim that it's preferable to create a snippet for both TypeScript and JavaScript but not their React variants, is because `useState` can also work inside a custom hook. Custom hooks don't need JSX.

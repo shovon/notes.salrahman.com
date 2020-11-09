@@ -1,5 +1,5 @@
 ---
-title: `useState` VS Code Snippet
+title: Create a snippet in VS Code
 tags:
   - VS Code
 ---
