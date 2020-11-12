@@ -5,7 +5,7 @@ tags:
   - React
 ---
 
-[Create the following snippet](/create-a-snippet-in-vs-code/), for JavaScript, TypeScript, and any other languages that look similar enough in order for the following snippet to work mostly fine.
+[Create the following snippet](/create-a-snippet-in-vs-code), for JavaScript, TypeScript, and any other languages that look similar enough in order for the following snippet to work mostly fine.
 
 ```
 {
