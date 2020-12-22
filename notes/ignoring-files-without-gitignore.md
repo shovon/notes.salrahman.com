@@ -1,5 +1,7 @@
 ---
 title: Ignoring Files Without .gitignore
+tags:
+  - Git
 ---
 
 In the `.git` folder, there is a directory called `info`, and in it, there is a filed called `exclude`.
