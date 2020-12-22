@@ -1,5 +1,7 @@
 ---
 title: WAV File format
+tags:
+  - Audio
 ---
 
 If you ever need to output a WAV file, here's the format:
