@@ -1,8 +1,9 @@
 ---
 title: Resolve Vim's dylib issue with macOS
 tags:
-  - Linux
-  - DevOps
+  - macOS
+  - Vim
+  - Homebrew
 ---
 
 Perhaps you've been using your macOS setup for a while, and then you try to run Vim after a while. But then, instead of Vim starting up, an error is raised. Here's the error:
