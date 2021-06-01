@@ -47,6 +47,12 @@ Then, to run your app as a service, invoke the following command.
 sudo systemctl start foobar
 ```
 
+And then, to ensure that it starts on boot, invoke the following command.
+
+```shell
+sudo systemctl enable foobar
+```
+
 Whether things went well or not, you should still see absolutely nothing.
 
 If your application is a web server, you can ping it with a cURL request, to see if it's working.
