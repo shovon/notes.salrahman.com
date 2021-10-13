@@ -36,7 +36,7 @@ Then, to generate the public key:
 # Replace `public.pem` with anything that you want.
 #
 # Be sure that `private.ec.key` is pointing to the correct private key path.
-openssl ec -in private.ec.key -pubout public.pem
+openssl ec -in private.ec.key -pubout -out public.pem
 ```
 
 ## Source
