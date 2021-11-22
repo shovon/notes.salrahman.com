@@ -37,6 +37,16 @@ podman machine start
 
 **Now you're all done!**
 
+> **Note**
+>
+> If you wanted to ensure that the machine is running, then you can invoke the following command to see that
+>
+> ```
+> podman machine list
+> ```
+>
+> If you can't see any running virtual machines, then something's wrong, and I have no idea on how I can help you with that.
+
 ## Bonus
 
 If you're familiar with Docker, then the list of commands available in Podman should equally match that of Docker.
